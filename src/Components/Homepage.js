@@ -19,7 +19,7 @@ const Homepage = ({ courseData }) => {
   const testimonialData = [
     {
       id: 1,
-      name: "Sarah Johnson",
+      name: "Subhajit kar",
       rating: 5.0,
       feedback:
         "I am extremely impressed with the service provided by this company. The team was responsive, professional, and delivered a top-notch product. I highly recommend their services!",
@@ -27,7 +27,7 @@ const Homepage = ({ courseData }) => {
     },
     {
       id: 2,
-      name: "Michael Smith",
+      name: "Dilip Rathod",
       rating: 4.8,
       feedback:
         "Working with this team has been a fantastic experience. They exceeded my expectations and delivered an outstanding website that perfectly matches my vision.",
@@ -35,7 +35,7 @@ const Homepage = ({ courseData }) => {
     },
     {
       id: 3,
-      name: "Emily Lee",
+      name: "Shubham Vishwakarma",
       rating: 4.7,
       feedback:
         "I couldn't be happier with the results. Their attention to detail and creative approach made a significant difference in the success of my project. I will definitely work with them again.",
@@ -43,7 +43,7 @@ const Homepage = ({ courseData }) => {
     },
     {
       id: 4,
-      name: "David Rodriguez",
+      name: "Mohammed Shafeeq",
       rating: 4.9,
       feedback:
         "I highly recommend this team for their expertise and professionalism. They were able to deliver exactly what I wanted and provided excellent support throughout the development process.",
@@ -51,7 +51,7 @@ const Homepage = ({ courseData }) => {
     },
     {
       id: 5,
-      name: "Jessica Chen",
+      name: "Sky Zaara",
       rating: 4.6,
       feedback:
         "The team's dedication and creativity were exceptional. They took the time to understand my requirements and delivered a website that exceeded my expectations. I am thrilled with the final product!",

@@ -89,7 +89,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer-latest-event">some other texts</div>
       </div>
       <div className="footer-lower-div">
         <p>© Copyright Bhoomi Techzone. All Rights Reserved</p>
@@ -97,11 +96,18 @@ const Footer = () => {
           <a href="https://wa.me/8130787194" target="_blank" rel="noreferrer">
             <i className="fab fa-whatsapp"></i>
           </a>
-          <i className="fab fa-facebook"></i>
+          <a href="https://www.facebook.com/profile.php?id=61550017448926" target="_blank" rel="noreferrer">
+            <i className="fab fa-facebook"></i>
+          </a>
           <a href="https://www.instagram.com/bhoomitechzoneservices/" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
-          <i className="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/bhoomi-techzone-services/" target="_blank" rel="noreferrer">
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:official@bhoomitechzoneservices.com? subject=Hello! &body=write your message." target="_blank" rel="noreferrer">
+            <i className="fa-regular fa-envelope"></i>
+          </a>
         </div>
       </div>
     </div>
@@ -109,3 +115,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
