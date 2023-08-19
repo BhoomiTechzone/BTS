@@ -536,7 +536,7 @@ p {
 
 /* Social icons */
 .social-icons {
-  width: 15%;
+  width: 18%;
   font-size: 24px;
 }
 
@@ -1113,6 +1113,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 2% 0;
+    
   }
 
   .social-icons i {
@@ -1258,7 +1259,10 @@ p {
 
 .gallery-container-images{
   margin-top: 4rem;
+  box-shadow: 10px 10px 8px #888888;
 }
+
+
 
 
 

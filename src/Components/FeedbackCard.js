@@ -33,7 +33,7 @@ const Testimonial = ({ testimonialData }) => {
             <p className="rating">{<Rating rating={testimonial.rating} />}</p>
             <div style={{ marginTop: "2%" }}>
               <i class="fas fa-quote-left"></i>
-              <p>{testimonial.feedback}</p>
+                <p>{testimonial.feedback}</p>
               <i class="fas fa-quote-right"></i>
             </div>
           </div>

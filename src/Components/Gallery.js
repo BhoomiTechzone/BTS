@@ -21,6 +21,18 @@ const Gallery = () => {
             image: "https://raw.githubusercontent.com/Bhi2710/Image/main/image5.jpeg",
             description: "image"    
         },
+        {
+            image: "https://raw.githubusercontent.com/Bhi2710/Image/main/image6.jpeg",
+            description: "image"    
+        },
+        {
+            image: "https://raw.githubusercontent.com/Bhi2710/Image/main/image7.jpeg",
+            description: "image"    
+        },
+        {
+            image: "https://raw.githubusercontent.com/Bhi2710/Image/main/image8.jpeg",
+            description: "image"    
+        },
     ]
 
     return (
