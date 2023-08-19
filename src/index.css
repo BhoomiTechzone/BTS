@@ -1262,6 +1262,51 @@ p {
   box-shadow: 10px 10px 8px #888888;
 }
 
+/* ITpage */
+
+.header-IT {
+  text-align: center;
+}
+
+.header-IT h1 {
+  position: relative;
+  display: inline-block;
+  margin: 2% 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  color: #000;
+}
+
+.header-IT h1::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20%; /* Adjust the width of the border-bottom here */
+  height: 3px;
+  background-color: #0dd;
+  border-radius: 20px;
+}
+
+.IT-boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 2% 10%;
+  }
+
+  .IT-box {
+    cursor: pointer;
+    margin: 4% 0.5%;
+    flex: 0 0 calc(35% - 3%); /* Each box takes 33.3333% width minus margins */
+    height: 58vh;
+    padding: 6% 4%;
+  }
+
 
 
 

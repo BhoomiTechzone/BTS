@@ -7,6 +7,11 @@ import Contact from "./Components/Contact";
 import Services from "./Components/Services";
 import PlacementAndTraining from "./Components/PlacementAndTraining";
 import Gallery from "./Components/Gallery";
+import ITpage from "./Components/Trainingpage/ITpage";
+import NonITpage from "./Components/Trainingpage/NonITpage";
+import HRdepartment from "./Components/Trainingpage/HRdepartment";
+import SalesDepartment from "./Components/Trainingpage/SalesDepartment";
+import SoftwareSales from "./Components/Trainingpage/SoftwareSales";
 
 const App = () => {
   const courseData = [
@@ -112,12 +117,13 @@ const App = () => {
         />
         <Route path="/career" element={<Career />} exact />
         <Route path="/contact" element={<Contact />} exact />
-        <Route
-          path="/services"
-          element={<Services courseData={courseData} />}
-          exact
-        />
-        <Route path="/gallery" element={<Gallery />} exact/>
+        <Route path="/services" element={<Services courseData={courseData} />} exact />
+        <Route path="/gallery" element={<Gallery />} exact />
+        <Route path="/IT-Department" element={<ITpage />} />
+        <Route path="/Non-IT-Department" element={<NonITpage /> } />
+        <Route path="/HR-Department" element={<HRdepartment />} />
+        <Route path="/Sales-Department" element={<SalesDepartment />} />
+        <Route path="/Software-Sales" element={<SoftwareSales />} />
       </Routes>
     </Router>
   );

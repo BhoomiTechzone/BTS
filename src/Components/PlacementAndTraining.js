@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import PAT from "../Images/pat.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const PlacementAndTraining = () => {
   const data = [
@@ -76,18 +76,62 @@ const PlacementAndTraining = () => {
       </div>
       <div className="placement-training">
         <h2>We Offer Training</h2>
+        
         <div className="image-outer-container">
-          {data.map((curr) => {
-            return (
-              <div className="image-container">
-                <img src={curr.img} alt="" />
-                <div className="text-overlay">
-                  <h3>{curr.name}</h3>
-                </div>
+          <div className="image-container">
+            <Link to="/IT-Department" className="navlink">
+              <img src="https://images.unsplash.com/photo-1637073849667-91120a924221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXQlMjBkZXBhcnRtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt=""/>
+              <div className="text-overlay">
+                <h3>IT Department</h3>
               </div>
-            );
-          })}
+            </Link>             
+          </div>
         </div>
+
+        <div className="image-outer-container">
+          <div className="image-container">
+            <Link to="/Non-IT-Department" className="navlink">
+              <img src="https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5vbiUyMGl0JTIwZGVwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" alt=""/>
+              <div className="text-overlay">
+                <h3>Non-IT Department</h3>
+              </div>
+            </Link>             
+          </div>
+        </div>
+
+        <div className="image-outer-container">
+          <div className="image-container">
+            <Link to="/HR-Department" className="navlink">
+              <img src="https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aHIlMjBkZXBhcnRtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" alt=""/>
+              <div className="text-overlay">
+                <h3>HR Department</h3>
+              </div>
+            </Link>             
+          </div>
+        </div>
+
+        <div className="image-outer-container">
+          <div className="image-container">
+            <Link to="/Sales-Department" className="navlink">
+              <img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNhbGVzJTIwZGVwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" alt=""/>
+              <div className="text-overlay">
+                <h3>Sales Department</h3>
+              </div>
+            </Link>             
+          </div>
+        </div>
+
+        <div className="image-outer-container">
+          <div className="image-container">
+            <Link to="/Software-Sales" className="navlink">
+              <img src="https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c29mdHdhcmUlMjBzYWxlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60" alt=""/>
+              <div className="text-overlay">
+                <h3>Software Sales</h3>
+              </div>
+            </Link>             
+          </div>
+        </div>
+        
       </div>
       <Footer />
     </div>
