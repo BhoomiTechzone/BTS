@@ -45,19 +45,17 @@ const ITpage = () => {
           <h1>Our-Traning</h1>
         </div>
 
-        <div className="IT-boxes">
-          {
-            traningData.map((ele,idx)=>{
-              return(
-                <div key={idx} class="icon-box">
-                <i class={ele.icon}></i>
-                <h3>{ele.title}</h3>
-                <p>{ele.description}</p>
+          <div className='IT-boxes'>
+              <div className='IT-box-left'>
+                <i class="fas fa-code"></i>
+                <h3>Frontend Developer</h3>
+                <p>A Frontend Developer is responsible for implementing the visual and interactive elements of a website or web application. They work with HTML, CSS, and JavaScript to create user interfaces and ensure a smooth user experience. Frontend Developers collaborate with designers and backend developers to bring designs to life and create functional web applications.</p>
               </div>
-              )
-            })
-          }
-        </div>
+              <div className='IT-box-right'>
+                <h1>Container</h1>
+              </div>         
+          </div>
+        
     </div>
   )
 }

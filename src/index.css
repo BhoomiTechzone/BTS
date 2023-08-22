@@ -1289,23 +1289,24 @@ p {
   border-radius: 20px;
 }
 
-.IT-boxes {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background: #f1f1f1;
-    padding: 2% 10%;
-  }
 
-  .IT-box {
-    cursor: pointer;
-    margin: 4% 0.5%;
-    flex: 0 0 calc(35% - 3%); /* Each box takes 33.3333% width minus margins */
-    height: 58vh;
-    padding: 6% 4%;
-  }
+.IT-boxes{
+  border: 1px solid red;
+  display: flex;
+  
+}
+
+.IT-box-left{
+  border: 1px solid yellow;
+  width: 30vw;
+}
+
+.IT-box-right{
+  border: 1px solid green;
+  width: 70vw;
+}
+
+  
 
 
 
