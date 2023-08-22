@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 
 const ITpage = () => {
 
@@ -44,7 +44,6 @@ const ITpage = () => {
         <div className="header-IT">
           <h1>Our-Traning</h1>
         </div>
-
           <div className='IT-boxes'>
               <div className='IT-box-left'>
                 <i class="fas fa-code"></i>
@@ -52,10 +51,52 @@ const ITpage = () => {
                 <p>A Frontend Developer is responsible for implementing the visual and interactive elements of a website or web application. They work with HTML, CSS, and JavaScript to create user interfaces and ensure a smooth user experience. Frontend Developers collaborate with designers and backend developers to bring designs to life and create functional web applications.</p>
               </div>
               <div className='IT-box-right'>
-                <h1>Container</h1>
+                <div className='IT-box-right-btn'>
+                  <Link to='html'>
+                    <button>HTML</button>
+                  </Link>
+                  <Link to='css'>
+                    <button>CSS</button>
+                  </Link>
+                  <Link to='javascript'>
+                    <button>JavaScript</button>
+                  </Link>
+                  <Link to='react'>
+                    <button>React</button>
+                  </Link>
+                </div>
+                <div className='IT-box-right-container'>
+                  <Outlet />
+                </div>
               </div>         
           </div>
-        
+
+          <div className='IT-boxes'>
+              <div className='IT-box-left'>
+                <i class="fas fa-database"></i>
+                <h3>Backend Developer</h3>
+                <p>A Backend Developer is responsible for building and maintaining the server-side of web applications. They work with databases, server logic, and APIs to ensure the smooth functioning of web applications. Backend Developers handle data storage, security, and performance, allowing frontend developers to focus on user interfaces and experiences.</p>
+              </div>
+              <div className='IT-box-right'>
+                <div className='IT-box-right-btn'>
+                  <Link to=''>
+                    <button>Node</button>
+                  </Link>
+                  <Link to=''>
+                    <button>Express</button>
+                  </Link>
+                  <Link to=''>
+                    <button>Mongodb</button>
+                  </Link>
+                  <Link to=''>
+                    <button>MySql</button>
+                  </Link>
+                </div>
+                <div className='IT-box-right-container'>
+                  <Outlet />
+                </div>
+              </div>         
+          </div>
     </div>
   )
 }

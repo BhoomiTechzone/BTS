@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Homepage from "./Components/Homepage";
 import About from "./Components/About";
 import Career from "./Components/Career";
@@ -12,6 +12,14 @@ import NonITpage from "./Components/Trainingpage/NonITpage";
 import HRdepartment from "./Components/Trainingpage/HRdepartment";
 import SalesDepartment from "./Components/Trainingpage/SalesDepartment";
 import SoftwareSales from "./Components/Trainingpage/SoftwareSales";
+import Html from "./Components/Pages/Html";
+import Css from "./Components/Pages/Css";
+import Javascript from "./Components/Pages/Javascript";
+import Reactpage from "./Components/Pages/Reactpage";
+import Nodepage from "./Components/Pages/Nodepage";
+import Express from "./Components/Pages/Express";
+import Mongodbpage from "./Components/Pages/Mongodbpage";
+import Mysqlpage from "./Components/Pages/Mysqlpage";
 
 const App = () => {
   const courseData = [
@@ -119,7 +127,13 @@ const App = () => {
         <Route path="/contact" element={<Contact />} exact />
         <Route path="/services" element={<Services courseData={courseData} />} exact />
         <Route path="/gallery" element={<Gallery />} exact />
-        <Route path="/IT-Department" element={<ITpage />} />
+        <Route path="/IT-Department" element={<ITpage />}>
+          <Route path="" element={<Navigate to='html' />} />
+          <Route path="html" element={<Html />} />
+          <Route path="css" element={<Css />} />
+          <Route path="javascript" element={<Javascript />} />
+          <Route path="reactjs" element={<Reactpage />} />
+        </Route>
         <Route path="/Non-IT-Department" element={<NonITpage /> } />
         <Route path="/HR-Department" element={<HRdepartment />} />
         <Route path="/Sales-Department" element={<SalesDepartment />} />
