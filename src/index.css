@@ -537,7 +537,7 @@ p {
 /* Social icons */
 .social-icons {
   width: 18%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .social-icons i {
@@ -545,6 +545,11 @@ p {
   cursor: pointer;
   color: #ddd;
   transition: color 0.3s;
+}
+@media (min-width: 250px) and (max-width:500px) {
+	.social-icons i{
+		padding: 10px;
+	}
 }
 
 .social-icons i:hover {
