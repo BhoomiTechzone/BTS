@@ -16,10 +16,10 @@ import Html from "./Components/Pages/Html";
 import Css from "./Components/Pages/Css";
 import Javascript from "./Components/Pages/Javascript";
 import Reactpage from "./Components/Pages/Reactpage";
-import Nodepage from "./Components/Pages/Nodepage";
-import Express from "./Components/Pages/Express";
-import Mongodbpage from "./Components/Pages/Mongodbpage";
-import Mysqlpage from "./Components/Pages/Mysqlpage";
+import BPOpage from "./Components/Pages/BPOpage";
+import Salespage from "./Components/Pages/Salespage";
+import Backendpage from "./Components/Pages/Backendpage";
+import Councillorpage from "./Components/Pages/Councillorpage";
 
 const App = () => {
   const courseData = [
@@ -134,7 +134,13 @@ const App = () => {
           <Route path="javascript" element={<Javascript />} />
           <Route path="reactjs" element={<Reactpage />} />
         </Route>
-        <Route path="/Non-IT-Department" element={<NonITpage /> } />
+        <Route path="/Non-IT-Department" element={<NonITpage /> } >
+          <Route path="" element={<Navigate to='BPO' />} />
+          <Route path="BPO" element={<BPOpage />} />
+          <Route path="sales-executive" element={<Salespage />} />
+          <Route path="backend" element={<Backendpage />} />
+          <Route path="councillor" element={<Councillorpage />} />
+        </Route>
         <Route path="/HR-Department" element={<HRdepartment />} />
         <Route path="/Sales-Department" element={<SalesDepartment />} />
         <Route path="/Software-Sales" element={<SoftwareSales />} />

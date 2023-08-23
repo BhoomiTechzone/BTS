@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar';
 import { Link, NavLink, Outlet } from 'react-router-dom';
-
+import Footer from '../Footer'
 const ITpage = () => {
 
   const traningData = [
@@ -61,7 +61,7 @@ const ITpage = () => {
                   <Link to='javascript'>
                     <button>JavaScript</button>
                   </Link>
-                  <Link to='react'>
+                  <Link to='reactjs'>
                     <button>React</button>
                   </Link>
                 </div>
@@ -70,33 +70,7 @@ const ITpage = () => {
                 </div>
               </div>         
           </div>
-
-          <div className='IT-boxes'>
-              <div className='IT-box-left'>
-                <i class="fas fa-database"></i>
-                <h3>Backend Developer</h3>
-                <p>A Backend Developer is responsible for building and maintaining the server-side of web applications. They work with databases, server logic, and APIs to ensure the smooth functioning of web applications. Backend Developers handle data storage, security, and performance, allowing frontend developers to focus on user interfaces and experiences.</p>
-              </div>
-              <div className='IT-box-right'>
-                <div className='IT-box-right-btn'>
-                  <Link to=''>
-                    <button>Node</button>
-                  </Link>
-                  <Link to=''>
-                    <button>Express</button>
-                  </Link>
-                  <Link to=''>
-                    <button>Mongodb</button>
-                  </Link>
-                  <Link to=''>
-                    <button>MySql</button>
-                  </Link>
-                </div>
-                <div className='IT-box-right-container'>
-                  <Outlet />
-                </div>
-              </div>         
-          </div>
+        <Footer />
     </div>
   )
 }

@@ -1374,6 +1374,30 @@ p {
   padding: 20px;
 }
 
+@media screen and (max-width: 700px) {
+  .IT-box-right-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .IT-box-right-btn button{
+    margin-left: 20px;
+  }
+
+  .html-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+  
+  .detail-container {
+    padding: 20px;
+  }
+  
+}
 
 
 
