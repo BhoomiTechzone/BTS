@@ -76,7 +76,8 @@ const PlacementAndTraining = () => {
       </div>
       <div className="placement-training">
         <h2>We Offer Training</h2>
-        
+
+        <div className="image-outer-main-container">
         <div className="image-outer-container">
           <div className="image-container">
             <Link to="/IT-Department" className="navlink">
@@ -130,6 +131,7 @@ const PlacementAndTraining = () => {
               </div>
             </Link>             
           </div>
+        </div>
         </div>
         
       </div>
