@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../Navbar';
 import { Outlet, Link, NavLink } from 'react-router-dom';
+import Footer from '../Footer';
 
 const NonITpage = () => {
   return (
@@ -13,8 +14,8 @@ const NonITpage = () => {
             Home
           </NavLink>
           <span> / </span>
-          <NavLink to="/IT-Department" className="navlink">
-            IT Department
+          <NavLink to="/Non-IT-Department" className="navlink">
+            NonITDepartment
           </NavLink>
         </h3>
     </div>
@@ -47,6 +48,7 @@ const NonITpage = () => {
           </div>
         </div>         
     </div>
+    <Footer />
     </div>
   )
 }
