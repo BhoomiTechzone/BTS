@@ -20,6 +20,12 @@ import BPOpage from "./Components/Pages/BPOpage";
 import Salespage from "./Components/Pages/Salespage";
 import Backendpage from "./Components/Pages/Backendpage";
 import Councillorpage from "./Components/Pages/Councillorpage";
+import HRmanager from "./Components/Pages/HRmanager";
+import HrExecutive from "./Components/Pages/HrExecutive";
+import HrRecruiter from "./Components/Pages/HrRecruiter";
+import HrAnalyst from "./Components/Pages/HrAnalyst";
+
+
 
 const App = () => {
   const courseData = [
@@ -141,7 +147,13 @@ const App = () => {
           <Route path="backend" element={<Backendpage />} />
           <Route path="councillor" element={<Councillorpage />} />
         </Route>
-        <Route path="/HR-Department" element={<HRdepartment />} />
+        <Route path="/HR-Department" element={<HRdepartment />}>
+          <Route path="" element={<Navigate to='hr-Manager' />} />
+          <Route path="hr-Manager" element={<HRmanager />} />
+          <Route path="hr-Exective" element={<HrExecutive />} />
+          <Route path="hr-Recruiter" element={<HrRecruiter />} />
+          <Route path="hr-Analyst" element={<HrAnalyst />} />
+        </Route>
         <Route path="/Sales-Department" element={<SalesDepartment />} />
         <Route path="/Software-Sales" element={<SoftwareSales />} />
       </Routes>

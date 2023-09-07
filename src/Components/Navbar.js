@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../Images/logo.png";
+import Login from "./Login";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("menu-list");
+  const [open, setOpen] = useState(false);
+
+  const openDialog = () =>{
+    setOpen(true)
+  }
+
   const showMenu = () => {
     if (menu === "show-menu") {
       setMenu("menu-list");
@@ -33,10 +40,11 @@ const Navbar = () => {
         <li>
           <NavLink to="/contact">contact</NavLink>
         </li>
-        <li>
-          <NavLink to="/gallery">Gallery</NavLink>
+        <li onClick={() => openDialog()}>
+          Login
         </li>
       </ul>
+      <Login open={open} setOpen={setOpen}/>
       <span style={{ display: "none" }} className="menu-btn" onClick={showMenu}>
         Menu
       </span>

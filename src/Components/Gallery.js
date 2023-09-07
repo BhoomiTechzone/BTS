@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from './Navbar';
-import { NavLink } from "react-router-dom";
 
 const Gallery = () => {
 
@@ -36,21 +34,10 @@ const Gallery = () => {
     ]
 
     return (
-        <div>
-            <Navbar />
-            <div className="sub-navbar">
-                <h3>Services</h3>
-                <h3>
-                    <NavLink to="/" className="navlink">
-                        Home
-                    </NavLink>
-                    <span> / </span>
-                    <NavLink to="/gallery" className="navlink">
-                        Gallery
-                    </NavLink>
-                </h3>
+        <div className='gallary-main-container'>
+            <div className='gallery-heading'>
+              <h1>Image Container</h1>
             </div>
-
             <div className='gallery-container'>
                   {
                     imageContainer.map((ele,idx)=>{
@@ -62,7 +49,6 @@ const Gallery = () => {
                     })
                   }
             </div>
-
         </div>
     )
 }

@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import contactBG from "../Images/contactbg.jpg";
 import contactBG1 from "../Images/contactbg1.jpg";
+import Gallery from "./Gallery"
 
 const Contact = () => {
   const [userData, setUserData] = useState({
@@ -51,6 +52,7 @@ const Contact = () => {
   };
 
   return (
+  
     <div className="contact" ref={topRef}>
       <Navbar />
       <div className="sub-navbar">
@@ -136,7 +138,7 @@ const Contact = () => {
         </div>
         <img src={contactBG1} alt="" className="bg" />
       </div>
-
+      <Gallery />
       <Footer />
     </div>
   );
