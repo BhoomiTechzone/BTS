@@ -22,7 +22,7 @@ const Wrapper = styled(Box)`
     padding: 25px 35px;
     flex: 1;
     & > div, & > button, & > p{
-        margin-top: 20px;
+        margin-top: 25px;
     }
 `;
 
@@ -42,7 +42,7 @@ const accountIntitialValues = {
   signup: {
     view: "signup",
     heading: "Looks like you're new here!",
-    subHeading: "Sign up with your Email to get stated"
+    subHeading: "Sign up with your Email to get started"
   },
 }
 
@@ -75,7 +75,7 @@ const Login = ({open, setOpen}) => {
                 <Typography style={{fontSize: 'small'}}>By continuing you agree to Bhoomi Techzone Pvt. Ltd. Teams of Use and Privacy Policy.</Typography>
                 <LoginButton>Login</LoginButton>
                 <Typography style={{textAlign: 'center'}}>OR</Typography>
-                <Typography onClick={()=> toggleSignup()}>Create New Account ?</Typography>
+                <Typography style={{textAlign: 'center', fontSize: "15px", color: "#0dd", cursor: "pointer" }} onClick={()=> toggleSignup()}>Create New Account ?</Typography>
               </Wrapper>
             :
               <Wrapper>

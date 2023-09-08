@@ -40,7 +40,7 @@ const Navbar = () => {
         <li>
           <NavLink to="/contact">contact</NavLink>
         </li>
-        <li onClick={() => openDialog()}>
+        <li className="LoginContainer" onClick={() => openDialog()}>
           Login
         </li>
       </ul>

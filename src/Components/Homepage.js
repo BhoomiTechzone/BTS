@@ -76,7 +76,7 @@ const Homepage = ({ courseData }) => {
           <div className="carousel-slide">
             <img src={Image1} alt="1" />
             <div className="overlay">
-              <h2>Welcome to Bhoomi Techzone Services</h2>
+              <h2>Welcome to Bhoomi Techzone</h2>
               <p>
                 At Bhoomi Techzone, we offer top-notch tech services and
                 unparalleled industry expertise to our customers. Our dedicated
@@ -90,11 +90,11 @@ const Homepage = ({ courseData }) => {
             <img src={Image2} alt="2" />
             <div className="overlay">
               <h2>
-                Bhoomi Techzone Services: Your Gateway to Exceptional Tech
+                Bhoomi Techzone: Your Gateway to Exceptional Tech
                 Services and Industry Expertise.
               </h2>
               <p>
-                At Bhoomi Techzone Services, we pride ourselves on delivering
+                At Bhoomi Techzone, we pride ourselves on delivering
                 the best-in-class tech services and unwavering customer support
                 to help you excel in your industry. With our industry-leading
                 expertise, we assist our customers in overcoming key business
@@ -108,11 +108,11 @@ const Homepage = ({ courseData }) => {
             <img src={Image3} alt="3" />
             <div className="overlay">
               <h2>
-                Bhoomi Techzone Services: Delivering Top-notch Tech Services and
+                Bhoomi Techzone : Delivering Top-notch Tech Services and
                 Expert Support
               </h2>
               <p>
-                At Bhoomi Techzone Services, we pride ourselves on offering
+                At Bhoomi Techzone, we pride ourselves on offering
                 industry-leading tech services and unparalleled expertise. Our
                 dedicated support system ensures seamless solutions for our
                 valued customers, helping them overcome key business challenges

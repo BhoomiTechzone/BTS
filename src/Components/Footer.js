@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-upper-div">
         <div className="footer-company-details">
-          <h2>BHOOMI TECHZONE SERVICES</h2>
+          <h2>BHOOMI TECHZONE </h2>
           <p>A-43, Sector 63 Noida UP - 201301</p>
           <p>
             <b>Phone:</b>

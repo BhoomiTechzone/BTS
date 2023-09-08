@@ -5,28 +5,6 @@ import PAT from "../Images/pat.png";
 import { Link, NavLink } from "react-router-dom";
 
 const PlacementAndTraining = () => {
-  const data = [
-    {
-      name: "IT Department",
-      img: "https://images.unsplash.com/photo-1637073849667-91120a924221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXQlMjBkZXBhcnRtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
-    },
-    {
-      name: "Non-IT Department",
-      img: "https://images.unsplash.com/photo-1577401159468-3bbc7ee440b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5vbiUyMGl0JTIwZGVwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
-    },
-    {
-      name: "HR Department",
-      img: "https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aHIlMjBkZXBhcnRtZW50fGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60",
-    },
-    {
-      name: "Sales Department",
-      img: "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNhbGVzJTIwZGVwYXJ0bWVudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
-    },
-    {
-      name: "Software Sales",
-      img: "https://images.unsplash.com/photo-1559526324-593bc073d938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c29mdHdhcmUlMjBzYWxlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60",
-    },
-  ];
 
   return (
     <div className="placement-and-training">
@@ -48,7 +26,7 @@ const PlacementAndTraining = () => {
         <div>
           <h3>From Knowledge to Career: Mastering Skills for Placement</h3>
           <p>
-            At Bhoomi Techzone Services, we take immense pride in being the
+            At Bhoomi Techzone, we take immense pride in being the
             pioneers of providing industry-leading training across various
             domains. Our training programs are carefully curated by industry
             experts and designed to equip you with the skills and knowledge
@@ -58,7 +36,7 @@ const PlacementAndTraining = () => {
             your chosen field. Whether it's software development, data science,
             digital marketing, or any other cutting-edge domain, we have the
             expertise to make you proficient. But that's not all; at Bhoomi
-            Techzone Services, we go the extra mile to secure your future. Our
+            Techzone, we go the extra mile to secure your future. Our
             commitment to your success extends beyond training. We take pride in
             our strong industry connections and an extensive network of partners
             who actively seek to recruit our trained professionals. When you
