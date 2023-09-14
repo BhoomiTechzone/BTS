@@ -1,5 +1,6 @@
 import { Dialog, Box, TextField, Button, Typography, styled } from '@mui/material';
 import React, { useState } from 'react';
+// import '/index.css'
 
 const Component = styled(Box)`
    height: 70vh;
@@ -41,7 +42,7 @@ const accountIntitialValues = {
   },
   signup: {
     view: "signup",
-    heading: "Looks like you're new here!",
+    heading: "Signup",
     subHeading: "Sign up with your Email to get started"
   },
 }
@@ -62,6 +63,7 @@ const Login = ({open, setOpen}) => {
   return (
     <Dialog open={open} onClose={handleClose} PaperProps={{sx: {maxWidth: 'unset'}}}>
       <Component>
+        
         <Box style={{display:'flex', height:'100%'}}>
           <Image>
             <Typography variant='h4'>{account.heading}</Typography>
