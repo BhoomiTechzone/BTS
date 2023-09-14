@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Services = ({ courseData }) => {
   const topRef = useRef();
@@ -9,6 +11,11 @@ const Services = ({ courseData }) => {
   useEffect(() => {
     topRef.current.scrollIntoView({ behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  },[])
+
   return (
     <div className="services" ref={topRef}>
       <Navbar />
@@ -27,7 +34,7 @@ const Services = ({ courseData }) => {
       <div className="icon-boxes">
         {courseData.map((curr) => {
           return (
-            <div class="icon-box">
+            <div data-aos={curr.anime} class="icon-box">
               <i class={curr.icon}></i>
               <h3>{curr.title}</h3>
               <p>{curr.description}</p>

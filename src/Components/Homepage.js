@@ -8,6 +8,8 @@ import Image3 from "../Images/image3.jpg";
 import Goku from "../Images/goku.jpg";
 import FeedbackCarousel from "./FeedbackCard";
 import Footer from "./Footer";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Homepage = ({ courseData }) => {
   const topRef = useRef();
@@ -15,6 +17,10 @@ const Homepage = ({ courseData }) => {
   useEffect(() => {
     topRef.current.scrollIntoView({ behavior: "smooth" });
   }, []);
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  },[])
 
   const testimonialData = [
     {
@@ -126,7 +132,7 @@ const Homepage = ({ courseData }) => {
       <div className="who-we-are">
         <h1>WHO WE ARE</h1>
         <div className="who-we-are-text">
-          <div>
+          <div aos-data="">
             <h2>WE ARE BHOOMI TECHZONE</h2>
             <p>
               At Bhoomi Techzone, we offer top-notch tech services and
@@ -207,7 +213,7 @@ const Homepage = ({ courseData }) => {
         <div className="icon-boxes">
           {courseData.slice(0, 6).map((curr) => {
             return (
-              <div class="icon-box">
+              <div data-aos={curr.anime} class="icon-box">
                 <i class={curr.icon}></i>
                 <h3>{curr.title}</h3>
                 <p>{curr.description}</p>
@@ -219,7 +225,7 @@ const Homepage = ({ courseData }) => {
       <div className="top-feedbacks">
         <h1>TOP FEEDBACKS</h1>
         <div className="top-feedbacks-slider">
-          <div className="top-feedbacks-slider-text">
+          <div data-aos="fade-right" className="top-feedbacks-slider-text">
             <h2>Happy Users' Feedback</h2>
             <p>
               Read the inspiring stories and glowing testimonials from our
