@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import React from "react";
+import React, {useEffect} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const Testimonial = ({ testimonialData }) => {
   const settings = {
@@ -13,6 +15,10 @@ const Testimonial = ({ testimonialData }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  },[])
 
   const Rating = ({ rating }) => {
     // Generate an array of length 'rating' filled with 'faStar' icons
@@ -24,7 +30,7 @@ const Testimonial = ({ testimonialData }) => {
   };
 
   return (
-    <div className="testimonial">
+    <div data-aos="fade-left" className="testimonial">
       <Slider {...settings}>
         {testimonialData.map((testimonial) => (
           <div key={testimonial.id} className="testimonial-card">
