@@ -81,7 +81,7 @@ li {
 
 /* Active link styles */
 .navbar ul li a.active {
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   color: #fff;
 }
 
@@ -106,7 +106,7 @@ li {
 
 /* Active link styles */
 .navbar ul li.active {
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   color: #fff;
 }
 
@@ -134,7 +134,7 @@ li {
   color: #fff;
   padding: 4% 4%;
   border-radius: 5px;
-  box-shadow: -5px -5px 0 #0dd;
+  box-shadow: -5px -5px 0 rgb(43,83,46);
   text-align: left;
   opacity: 0; /* Start the div with opacity 0 */
   transition: opacity 0.3s ease, top 0.3s ease; /* Add transition for opacity and top */
@@ -159,7 +159,7 @@ li {
 }
 
 .carousel-slide button {
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   color: #fff;
   border: none;
   padding: 8px 20px;
@@ -168,7 +168,7 @@ li {
 }
 
 .carousel-slide button:hover {
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
 }
 
 /* who we are css  */
@@ -197,22 +197,26 @@ li {
   margin: 1% 0;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
+  color: rgb(79,135,59);
 }
+.underline-g{
+  border-bottom: 3px solid rgb(79,135,59);
+  }
 
 .who-we-are h1::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   bottom: -20%;
   left: 50%;
   transform: translateX(-50%);
   width: 20%; /* Adjust the width of the border-bottom here */
   height: 3px;
-  background-color: #0dd;
+  /* background-color: rgb(43,83,46); */
   border-radius: 20px;
 }
 
 h4 span {
-  color: #0dd;
+  color: rgb(43,83,46);
   font-weight: 900;
   margin: 0 1%;
 }
@@ -225,21 +229,28 @@ h4 span {
 .our-services h1 {
   position: relative;
   display: inline-block;
-  margin: 2% 0;
+  /* margin: 2% 0; */
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   color: #fff;
+  width: 100%;
+  border-radius: 0%;
 }
-
+.bg-gl{
+  background-color: rgb(79,135,59);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
 .our-services h1::after {
-  content: "";
+  /* content: ""; */
   position: absolute;
   bottom: -20%;
   left: 50%;
   transform: translateX(-50%);
   width: 20%; /* Adjust the width of the border-bottom here */
   height: 3px;
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   border-radius: 20px;
 }
 
@@ -248,7 +259,7 @@ h4 span {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  background: #f1f1f1;
+  background: #d2cfcf;
   padding: 2% 10%;
 }
 
@@ -258,7 +269,7 @@ h4 span {
   flex: 0 0 calc(35% - 3%); /* Each box takes 33.3333% width minus margins */
   height: 58vh;
   padding: 4% 3%;
-  background-color: #fff;
+  background-color: #e0d8d8;
   border-radius: 2px;
   text-align: center;
   transition: box-shadow 0.3s, color 0.3s;
@@ -267,14 +278,14 @@ h4 span {
 .icon-box i {
   font-size: 35px;
   margin-bottom: 10px;
-  color: #555;
+  color: rgb(184,204,45);
   transition: color 0.3s;
 }
 
 .icon-box h3 {
   font-size: 23px;
   margin-bottom: 10px;
-  color: #333;
+  color: rgb(43,83,46);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
@@ -290,7 +301,7 @@ h4 span {
 }
 
 .icon-box:hover i {
-  color: #0dd;
+  color: rgb(43,83,46);
 }
 
 .icon-box:hover p {
@@ -372,7 +383,7 @@ h4 span {
 
 .fa-quote-left,
 .fa-quote-right {
-  color: #0dd;
+  color: rgb(43,83,46);
 }
 
 .testimonial-card h3 {
@@ -392,7 +403,7 @@ h4 span {
 }
 
 .testimonial-card .rating {
-  color: #0dd;
+  color: rgb(43,83,46);
 }
 
 /* Styling for the carousel dots
@@ -422,7 +433,7 @@ h4 span {
 }
 
 .slick-dots li.slick-active button {
-  background-color: #0dd; 
+  background-color: rgb(43,83,46); 
 } */
 
 /* Styling for the previous and next buttons */
@@ -446,7 +457,7 @@ h4 span {
 /* Custom CSS for the carousel buttons on hover */
 .slick-prev:hover,
 .slick-next:hover {
-  background-color: #0dd !important;
+  background-color: rgb(43,83,46) !important;
 }
 
 /* Custom positioning for the left button */
@@ -528,7 +539,7 @@ p {
 
 .footer-links span {
   margin-right: 5px;
-  color: #0dd;
+  color: rgb(43,83,46);
   font-weight: 900;
 }
 
@@ -542,7 +553,7 @@ p {
 }
 
 .footer-links li:hover .navlink {
-  color: #0dd;
+  color: rgb(43,83,46);
 }
 
 /* Footer latest event */
@@ -599,6 +610,7 @@ p {
     height: 30%;
     width: 100%;
     padding: 20px;
+    /* background-color: #2B532E; */
   }
   .MuiBox-root .css-e0bi2o{
     width: 100%;
@@ -636,12 +648,14 @@ p {
 }
 
 .social-icons i:hover {
-  color: #0dd;
+  color: rgb(43,83,46);
 }
-
+.MuiBox-root .css-10j8va1{
+  background-color: rgb(43,83,46);
+}
 /* services component css here  */
 .sub-navbar {
-  background: #0dd;
+  background: rgb(43,83,46);
   color: #fff;
   display: flex;
   align-items: center;
@@ -670,7 +684,7 @@ p {
   content: "";
   width: 5%;
   height: 3px;
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   border-radius: 20px;
   position: absolute; /* Position the ::after pseudo-element absolutely */
   bottom: 0; /* Position it at the bottom of the h1 tag */
@@ -717,7 +731,7 @@ p {
 }
 
 .why-to-choose-us-card:hover i {
-  color: #0dd;
+  color: rgb(43,83,46);
 }
 
 /* contact component css here  */
@@ -758,8 +772,8 @@ p {
 
 .details div i {
   border-radius: 50%;
-  border: 1px solid #0dd;
-  color: #0dd;
+  border: 1px solid rgb(43,83,46);
+  color: rgb(43,83,46);
   padding: 1% 1.5%;
 }
 
@@ -769,7 +783,7 @@ p {
 
 .details div:hover i {
   color: #fff;
-  background: #0dd;
+  background: rgb(43,83,46);
 }
 
 .contact-form-outer {
@@ -820,7 +834,7 @@ p {
 }
 
 .form-group button {
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -860,7 +874,7 @@ p {
   content: "";
   width: 5%;
   height: 3px;
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   border-radius: 20px;
   position: absolute; /* Position the ::after pseudo-element absolutely */
   bottom: 0; /* Position it at the bottom of the h1 tag */
@@ -915,7 +929,7 @@ p {
   content: "";
   width: 5%;
   height: 3px;
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   border-radius: 20px;
   position: absolute; /* Position the ::after pseudo-element absolutely */
   bottom: 0; /* Position it at the bottom of the h1 tag */
@@ -1033,7 +1047,7 @@ p {
 
 /* Active link styles */
 .navbar ul li a.active {
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   color: #fff !important;
 }
 
@@ -1214,7 +1228,7 @@ p {
   }
 
   .social-icons i:hover {
-    color: #0dd;
+    color: rgb(43,83,46);
   }
 
   .why-to-choose-us h1 {
@@ -1371,7 +1385,7 @@ p {
     transform: translateX(-50%);
     width: 20%;
     height: 3px;
-    background-color: #0dd;
+    background-color: rgb(43,83,46);
     border-radius: 20px;
 }
 
@@ -1403,7 +1417,7 @@ p {
   transform: translateX(-50%);
   width: 20%; /* Adjust the width of the border-bottom here */
   height: 3px;
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   border-radius: 20px;
 }
 
@@ -1425,7 +1439,7 @@ p {
 }
 
 .IT-box-left i{
-  color: #0dd;
+  color: rgb(43,83,46);
   font-size: 24px;
 }
 
@@ -1454,7 +1468,7 @@ p {
 .IT-box-right-btn button{
   padding: 4px 16px;
   font-weight: bold;
-  background-color: #0dd;
+  background-color: rgb(43,83,46);
   border-radius: 4px;
   cursor: pointer;
   border: none;

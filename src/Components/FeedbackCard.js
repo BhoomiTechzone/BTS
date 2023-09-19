@@ -30,7 +30,7 @@ const Testimonial = ({ testimonialData }) => {
   };
 
   return (
-    <div data-aos="fade-left" className="testimonial">
+    <div  className="testimonial">
       <Slider {...settings}>
         {testimonialData.map((testimonial) => (
           <div key={testimonial.id} className="testimonial-card">

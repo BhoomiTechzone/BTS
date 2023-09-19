@@ -28,7 +28,7 @@ const Wrapper = styled(Box)`
 `;
 
 const LoginButton = styled(Button)`
-    background: #0dd;
+    background: green;
     color: #fff;
     height: 48px;
     font-weight: bold;
@@ -77,7 +77,7 @@ const Login = ({open, setOpen}) => {
                 <Typography style={{fontSize: 'small'}}>By continuing you agree to Bhoomi Techzone Pvt. Ltd. Teams of Use and Privacy Policy.</Typography>
                 <LoginButton>Login</LoginButton>
                 <Typography style={{textAlign: 'center'}}>OR</Typography>
-                <Typography style={{textAlign: 'center', fontSize: "15px", color: "#0dd", cursor: "pointer" }} onClick={()=> toggleSignup()}>Create New Account ?</Typography>
+                <Typography style={{textAlign: 'center', fontSize: "15px", color: "green", cursor: "pointer" }} onClick={()=> toggleSignup()}>Create New Account ?</Typography>
               </Wrapper>
             :
               <Wrapper>

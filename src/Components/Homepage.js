@@ -80,7 +80,7 @@ const Homepage = ({ courseData }) => {
           transitionTime={500}
         >
           <div className="carousel-slide">
-            <img src={Image1} alt="1" />
+            <img src={Image2} alt="1" />
             <div className="overlay">
               <h2>Welcome to Bhoomi Techzone</h2>
               <p>
@@ -93,7 +93,7 @@ const Homepage = ({ courseData }) => {
             </div>
           </div>
           <div className="carousel-slide">
-            <img src={Image2} alt="2" />
+            <img src={Image3} alt="2" />
             <div className="overlay">
               <h2>
                 Bhoomi Techzone: Your Gateway to Exceptional Tech
@@ -111,7 +111,7 @@ const Homepage = ({ courseData }) => {
             </div>
           </div>
           <div className="carousel-slide">
-            <img src={Image3} alt="3" />
+            <img src={Image1} alt="3" />
             <div className="overlay">
               <h2>
                 Bhoomi Techzone : Delivering Top-notch Tech Services and
@@ -130,10 +130,11 @@ const Homepage = ({ courseData }) => {
         </Carousel>
       </div>
       <div className="who-we-are">
-        <h1>WHO WE ARE</h1>
+        {/* <h1>WHO WE ARE</h1> */}
+        <h1> <span class="underline-g"> WHO WE ARE</span></h1>
         <div className="who-we-are-text">
           <div aos-data="">
-            <h2>WE ARE BHOOMI TECHZONE</h2>
+            <h2> <span class="bg-gl"> WE ARE BHOOMI TECHZONE</span></h2>
             <p>
               At Bhoomi Techzone, we offer top-notch tech services and
               unparalleled industry expertise to our customers. Our dedicated
@@ -143,7 +144,7 @@ const Homepage = ({ courseData }) => {
             </p>
           </div>
           <div>
-            <h3>Empowering Progress through Innovation and Expertise</h3>
+            <h3> <span className="bg-gl">Empowering Progress through Innovation and Expertise</span></h3>
             <p>
               Our company is built on the principles of leadership, integrity,
               and accountability. With our high-caliber engineers and
@@ -209,7 +210,7 @@ const Homepage = ({ courseData }) => {
         </div>
       </div>
       <div className="our-services">
-        <h1>OUR SERVICES</h1>
+        <h1 className="bg-gl">OUR SERVICES</h1>
         <div className="icon-boxes">
           {courseData.slice(0, 6).map((curr) => {
             return (
