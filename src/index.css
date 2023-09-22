@@ -236,12 +236,14 @@ h4 span {
   width: 100%;
   border-radius: 0%;
 }
+
 .bg-gl{
   background-color: rgb(79,135,59);
   color: white;
   padding: 10px;
   border-radius: 20px;
 }
+
 .our-services h1::after {
   /* content: ""; */
   position: absolute;
@@ -574,21 +576,23 @@ p {
 
 /* Social icons */
 .social-icons {
-  width: 18%;
-  font-size: 20px;
+  width: 45%;
+  font-size: 30px;
 }
 
 .social-icons i {
-  margin-left: 10%;
+  margin-left: 8%;
   cursor: pointer;
   color: #ddd;
   transition: color 0.3s;
 }
-@media (min-width: 250px) and (max-width:500px) {
-	.social-icons i{
-		padding: 10px;
-	}
+
+@media screen and (max-width: 700px) {
+  .social-icons i{
+    margin-right: 15px;
+  }
 }
+
 @media (min-width: 250px) and (max-width:500px) {
 	.navbar{
 		padding: 20px !important;
@@ -619,6 +623,7 @@ p {
     height: 70vh;
     width: 100% !important;
 }
+
 .css-10j8va1>h4 {
   color: #ffffff;
   /* font-size: 20px; */
