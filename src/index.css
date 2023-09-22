@@ -650,6 +650,16 @@ p {
   font-size: 15px;
   
 }
+.bg-gl{
+  font-size: 10px !important;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  text-align: center;
+}
+.we-are-bt{
+  text-align: center;
+}
+
 }
 
 .social-icons i:hover {

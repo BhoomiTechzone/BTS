@@ -102,9 +102,9 @@ const Footer = () => {
           <a href="https://www.instagram.com/bhoomitechzonepvtltd/" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
-          <a href="https://www.linkedin.com/in/bhoomi-techzone-services/" target="_blank" rel="noreferrer">
+          {/* <a href="https://www.linkedin.com/in/bhoomi-techzone-services/" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin"></i>
-          </a>
+          </a> */}
           <a href="mailto:info@bhoomitechzone.com? subject=Hello! &body=write your message." target="_blank" rel="noreferrer">
             <i className="fa-regular fa-envelope"></i>
           </a>

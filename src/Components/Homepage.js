@@ -134,7 +134,7 @@ const Homepage = ({ courseData }) => {
         <h1> <span class="underline-g"> WHO WE ARE</span></h1>
         <div className="who-we-are-text">
           <div aos-data="">
-            <h2> <span class="bg-gl"> WE ARE BHOOMI TECHZONE</span></h2>
+            <h2 className="we-are-bt"> <span class="bg-gl"> WE ARE BHOOMI TECHZONE</span></h2>
             <p>
               At Bhoomi Techzone, we offer top-notch tech services and
               unparalleled industry expertise to our customers. Our dedicated
