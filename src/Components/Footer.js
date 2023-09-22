@@ -99,14 +99,23 @@ const Footer = () => {
           <a href="https://www.facebook.com/profile.php?id=61550017448926" target="_blank" rel="noreferrer">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/bhoomitechzoneservices/" target="_blank" rel="noreferrer">
+          <a href="https://www.instagram.com/bhoomitechzonepvtltd/" target="_blank" rel="noreferrer">
             <i className="fab fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/in/bhoomi-techzone-services/" target="_blank" rel="noreferrer">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="mailto:official@bhoomitechzoneservices.com? subject=Hello! &body=write your message." target="_blank" rel="noreferrer">
+          <a href="mailto:info@bhoomitechzone.com? subject=Hello! &body=write your message." target="_blank" rel="noreferrer">
             <i className="fa-regular fa-envelope"></i>
+          </a>
+          <a href="https://www.youtube.com/@bhoomitechzone" target="_blank" rel="noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://t.me/+918130787194" target="_blank" rel="noreferrer">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="https://twitter.com/Bhooomitechzone" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-twitter"></i>
           </a>
         </div>
       </div>
